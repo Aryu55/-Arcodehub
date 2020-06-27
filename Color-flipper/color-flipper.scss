@@ -1,0 +1,31 @@
+@import  "global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital@1&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#bg{
+    @include position(absolute,40%,40%);
+    background-color: black;
+    color: white;
+    @include measurement(100px,400px);
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: "Pattaya";
+    @include flex(flex,center,center);
+    flex-direction: column;
+}
+span{
+    font-size: 30px;
+    padding-top: 7px;
+}
+button{
+    @include position(absolute,60%,50%);
+}
+.cname{
+    font-family: "Roboto";
+}
