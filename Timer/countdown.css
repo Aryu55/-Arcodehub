@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+p {
+  height: 100px;
+  width: 500px;
+  background: #43C6AC;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#191654), to(#43C6AC));
+  background: linear-gradient(to right, #191654, #43C6AC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-box-shadow: inset 0 0 10px #000000;
+          box-shadow: inset 0 0 10px #000000;
+  color: white;
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.timer {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+img {
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  -webkit-transform: translate(95px, 0);
+          transform: translate(95px, 0);
+}
+/*# sourceMappingURL=countdown.css.map */
