@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital@1&display=swap");
+body {
+  background-color: #f1f1f1;
+}
+
+.counter {
+  font-size: 50px;
+  font-family: "Pattaya";
+  font-weight: 0;
+}
+
+.everything {
+  position: absolute;
+  top: 38%;
+  left: 38%;
+}
+
+.btn {
+  margin: 10px;
+  -webkit-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+}
+/*# sourceMappingURL=counter.css.map */
