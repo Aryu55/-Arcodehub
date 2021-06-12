@@ -5,9 +5,7 @@ export default function index() {
   const emailInputRef = useRef();
   const feedbackRef = useRef();
   
-  const submitForm = (e) => {
-const [feedbackRef, setfeedbackRef] = useState([])
-
+  const s
     e.preventDefault();
     const enteredEmail = emailInputRef.current.value;
     const enteredFeedback = feedbackRef.current.value;
