@@ -1,1 +1,58 @@
-dfvfdv
+import React, { useState } from "react";
+import { useRef } from "react";
+
+export default function index() {
+  const emailInputRef = useRef();
+  const feedbackRef = useRef();
+  
+  const submitForm = (e) => {
+const [feedbackRef, setfeedbackRef] = useState([])
+
+    e.preventDefault();
+    const enteredEmail = emailInputRef.current.value;
+    const enteredFeedback = feedbackRef.current.value;
+
+    const reqBody = { email: enteredEmail, feedback: enteredFeedback };
+
+    fetch("/api/feedback", {
+      method: "POST",
+      body: JSON.stringify(reqBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((result) => {
+        response.json(result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  function loadFeedbackHandler() {
+    fetch("/api/feedback")
+      .then((result) => {
+        response.json(result)
+      })
+      .then((data) => {
+        setfeedbackRef(data.feedback)
+        console.log(feedbackRef)
+      })
+  }
+
+  return (
+    <div>
+      <h1>The Home Page</h1>
+      <form onSubmit={submitForm}>
+        <div>
+          <label htmlFor="email">Your email</label>
+          <input type="email" id="email" ref={emailInputRef}></input>
+        </div>
+        <div>
+          <label htmlFor="feedback">Your Feedback</label>
+          <textarea id="feedback" rows="5" ref={feedbackRef}></textarea>
+        </div>
+        <button onClick={loadFeedbackHandler}>Send Feedback</button>
+      </form>
+    </div>
+  );
+}
