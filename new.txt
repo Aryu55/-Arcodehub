@@ -26,16 +26,6 @@ export default function index() {
         console.log(err);
       });
   };
-  function loadFeedbackHandler() {
-    fetch("/api/feedback")
-      .then((result) => {
-        response.json(result)
-      })
-      .then((data) => {
-        setfeedbackRef(data.feedback)
-        console.log(feedbackRef)
-      })
-  }
 
   return (
     <div>
