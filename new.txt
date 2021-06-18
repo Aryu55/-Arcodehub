@@ -12,6 +12,19 @@ export default function index() {
 
     const reqBody = { email: enteredEmail, feedback: enteredFeedback };
 
+    fetch("/api/feedback", {
+      method: "POST",//
+      body: JSON.stringify(reqBody),
+      headers: {
+        "Content-Type": "application/json",asxcsddf
+      },
+    })
+      .then((result) => {
+        response.json(result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
