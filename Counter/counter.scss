@@ -1,0 +1,19 @@
+@import "global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital@1&display=swap');
+
+body{
+    background-color: #f1f1f1;
+}
+.counter{
+    @include font(50px,"Pattaya",0)
+
+}
+.everything{
+    @include position(absolute,38%,38%);
+    
+}
+.btn{
+    margin: 10px;
+    transform: translate(0,20px);
+    
+}
