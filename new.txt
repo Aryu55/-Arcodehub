@@ -9,6 +9,14 @@ export default function index() {
     e.preventDefault();
     const enteredEmail = emailInputRef.current.value;
     const enteredFeedback = feedbackRef.current.value;
+<<<<<<< HEAD
+=======
+
+    const reqBody = { email: enteredEmail, feedback: enteredFeedback };
+
+   
+
+>>>>>>> design
   return (
     <div>
       <h1>The Home Page</h1>
