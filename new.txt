@@ -25,6 +25,9 @@ export default function index() {
       })   
 =======
       })
+<<<<<<< HEAD
+>>>>>>> design
+=======
 >>>>>>> design
       .catch((err) => { 
         console.log(err);
