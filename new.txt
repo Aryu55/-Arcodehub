@@ -12,7 +12,7 @@ export default function index() {
 
     const reqBody = { email: enteredEmail, feedback: enteredFeedback };
 
-   \
+   \*100
   };
 
   return (
